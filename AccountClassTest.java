@@ -1,9 +1,11 @@
 import java.util.Scanner;
+
 public class AccountClassTest {
     
     public static void main(String[]args)
     {
-        Scanner myObj = new Scanner(System.in);  
+        Scanner myObj = new Scanner(System.in);
+        
         System.out.println("Enter account number");
         int userAcc = myObj.nextInt();   
         
@@ -18,6 +20,7 @@ public class AccountClassTest {
         
         System.out.println("---------User Account= is: " + a1.getaccountnumber()); 
         System.out.println("----------User balce= is: " + a1.getbalance());
+        
         a1.setAccountnumber(150);
         a1.setBalance(500000);
         
