@@ -1,4 +1,3 @@
-
 public class AccountClass {
     
     private int accountnumber;
@@ -33,20 +32,16 @@ public class AccountClass {
         
     }
     
-    public void setAccountnumber(int accountnumber)
-    
-    {
-        if(accountnumber>0)
+    public void setAccountnumber(int accountnumber){
+        
+        if(accountnumber>0){
             
-        {
             
             this.setaccountnumber(accountnumber);
             
         }
             
-        else
-            
-        {
+        else{
             
             System.out.println("invalid account number");
             
@@ -54,9 +49,7 @@ public class AccountClass {
         
     }
     
-        public int getaccountnumber()
-    
-        {
+        public int getaccountnumber(){
             
             return accountnumber;
             
@@ -64,34 +57,29 @@ public class AccountClass {
         
         public void setBalance(double balance){
             
-            if(balance>0)
+            if(balance>0){
                 
-            {
                 this.balance=balance;
+                
             }
                 
-            else
+            else{
                 
-            {
                 System.out.println("invalid balance");
                 
             }
             
              }
     
-            public double getbalance()
-    
-            {
+            public double getbalance(){
+                
                 return balance;
+                
             }
         
-public void deposit(double amount)
+public void deposit(double amount){
     
-{
-    
- if(amount>0)
-     
-{
+ if(amount>0){
     
 balance+=amount;
     
@@ -99,35 +87,33 @@ System.out.println("deposited:"+ amount);
 
 }
      
- else
+ else{
      
- {
      System.out.println("invalid amount deposited");
+     
  }
     
 }
     
-public void withdraw(double amount)
+public void withdraw(double amount){
     
-{
-    if(amount>0&&amount<=balance)
+    if(amount>0&&amount<=balance){
         
-    {
         balance-=amount;
         
         System.out.println("withdraw:"+amount);
        
     }
         
-    else
+    else{
         
-    {
         System.out.println("invalid amount withdraw");
-    }
+        
+ }
     
-}
+ }
     
-}
+ }
 
 
 
